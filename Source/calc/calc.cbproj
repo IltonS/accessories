@@ -140,7 +140,7 @@
             <PCH>true</PCH>
         </PCHCompile>
         <CppCompile Include="Forms\Main.cpp">
-            <Form>Form1</Form>
+            <Form>FrmMain</Form>
             <FormType>dfm</FormType>
             <DependentOn>Forms\Main.h</DependentOn>
             <BuildOrder>2</BuildOrder>
