@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{13A386CD-781E-4249-95D4-2618ACDDA6FC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="calc\calc.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="calc">
+        <MSBuild Projects="calc\calc.cbproj"/>
+    </Target>
+    <Target Name="calc:Clean">
+        <MSBuild Projects="calc\calc.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="calc:Make">
+        <MSBuild Projects="calc\calc.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="calc"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="calc:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="calc:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
