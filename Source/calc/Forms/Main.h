@@ -13,6 +13,7 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.AppEvnts.hpp>
+#include <System.AnsiStrings.hpp>
 //---------------------------------------------------------------------------
 class TFrmMain : public TForm
 {

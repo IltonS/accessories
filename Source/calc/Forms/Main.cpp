@@ -46,7 +46,15 @@ void __fastcall TFrmMain::ShowWhatsThis(TObject *Sender)
 {
 	//Show What's this and hint
 	TControl *Control = static_cast<TControl *>(WhatsThisPopupMenu->PopupComponent);
-	BalloonHint->Description = Control->Hint;
+
+	int pos = Pos("|", Control->Hint);
+
+	if (pos>0) {
+		BalloonHint->Description = MidStr(Control->Hint, 1, (pos-1));
+		BalloonHint->Description += "\r\n" + MidStr(Control->Hint, (pos+1), Control->Hint.Length());
+	} else {
+		BalloonHint->Description = Control->Hint;
+	}
 	BalloonHint->ShowHint(WhatsThisPopupMenu->PopupPoint);
 
 }

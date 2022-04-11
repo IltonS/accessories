@@ -22,7 +22,7 @@ object FrmMain: TFrmMain
   object BtnBkspc: TButton
     Left = 80
     Top = 47
-    Width = 85
+    Width = 50
     Height = 25
     Caption = #9003' '
     ParentShowHint = False
@@ -32,9 +32,9 @@ object FrmMain: TFrmMain
     OnMouseDown = MouseDown
   end
   object BtnClearEntry: TButton
-    Left = 171
+    Left = 136
     Top = 47
-    Width = 85
+    Width = 106
     Height = 25
     Caption = 'CE'
     ParentShowHint = False
@@ -44,9 +44,9 @@ object FrmMain: TFrmMain
     OnMouseDown = MouseDown
   end
   object BtnClear: TButton
-    Left = 269
+    Left = 248
     Top = 47
-    Width = 85
+    Width = 106
     Height = 25
     Caption = 'C'
     ParentShowHint = False
@@ -491,9 +491,6 @@ object FrmMain: TFrmMain
         Width = 50
       end>
     OnMouseDown = MouseDown
-    ExplicitLeft = 208
-    ExplicitTop = 224
-    ExplicitWidth = 0
   end
   object ActionList: TActionList
     Left = 392
@@ -516,10 +513,10 @@ object FrmMain: TFrmMain
       OnExecute = ShowWhatsThis
     end
     object MemoryClearCmd: TAction
-      Category = 'Buttons'
+      Category = 'Functions'
       Caption = 'MC'
       Hint = 
-        'Clears any number stored in memory. Keyboard equivalent = Ctrl +' +
+        'Clears any number stored in memory.|Keyboard equivalent = Ctrl +' +
         ' L'
       ShortCut = 16460
       OnExecute = MemoryClear
