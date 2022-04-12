@@ -19,12 +19,12 @@ object FrmMain: TFrmMain
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
-  object BtnBkspc: TButton
+  object BtnBksp: TButton
     Left = 80
     Top = 47
     Width = 50
     Height = 25
-    Caption = #9003' '
+    Action = BkspCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -36,7 +36,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 106
     Height = 25
-    Caption = 'CE'
+    Action = ClearEntryCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -48,7 +48,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 106
     Height = 25
-    Caption = 'C'
+    Action = ClearCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -60,7 +60,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Caption = '7'
+    Action = Btn7Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -78,7 +78,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Caption = '8'
+    Action = Btn8Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -96,7 +96,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Caption = #247
+    Action = DivideCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -108,7 +108,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Caption = '9'
+    Action = Btn9Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -126,7 +126,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Caption = '4'
+    Action = Btn4Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -144,7 +144,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Caption = '5'
+    Action = Btn5Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -162,7 +162,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Caption = #215
+    Action = MultiplyCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -174,7 +174,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Caption = '6'
+    Action = Btn6Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -192,7 +192,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Caption = '1'
+    Action = Btn1Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -210,7 +210,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Caption = '2'
+    Action = Btn2Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -228,7 +228,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Caption = '-'
+    Action = SubtractCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -240,7 +240,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Caption = '3'
+    Action = Btn3Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -258,7 +258,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Caption = '0'
+    Action = Btn0Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -276,7 +276,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Caption = ','
+    Action = BtnDecimalCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -294,7 +294,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Caption = '+'
+    Action = SumCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -306,7 +306,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Caption = '='
+    Action = EqualsCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -371,7 +371,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Caption = 'MR'
+    Action = MemoryRecallCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -389,7 +389,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Caption = 'MS'
+    Action = MemoryStoreCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -407,7 +407,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Caption = 'M+'
+    Action = MemoryAddCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -425,7 +425,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Caption = #8730
+    Action = SqrtCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -437,31 +437,31 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Caption = '1/x'
+    Action = ReciprocalCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
     TabOrder = 26
     OnMouseDown = MouseDown
   end
-  object BtnPercent: TButton
+  object BtnPercentage: TButton
     Left = 304
     Top = 109
     Width = 50
     Height = 25
-    Caption = '%'
+    Action = PercentageCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
     TabOrder = 27
     OnMouseDown = MouseDown
   end
-  object BtnPlusMinus: TButton
+  object BtnChangeSign: TButton
     Left = 136
     Top = 173
     Width = 50
     Height = 25
-    Caption = '+/-'
+    Action = ChangeSignCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -513,13 +513,117 @@ object FrmMain: TFrmMain
       OnExecute = ShowWhatsThis
     end
     object MemoryClearCmd: TAction
-      Category = 'Functions'
+      Category = 'MemoryFunctions'
       Caption = 'MC'
       Hint = 
         'Clears any number stored in memory.|Keyboard equivalent = Ctrl +' +
         ' L'
       ShortCut = 16460
       OnExecute = MemoryClear
+    end
+    object Btn1Cmd: TAction
+      Category = 'NumPad'
+      Caption = '1'
+    end
+    object Btn2Cmd: TAction
+      Category = 'NumPad'
+      Caption = '2'
+    end
+    object Btn3Cmd: TAction
+      Category = 'NumPad'
+      Caption = '3'
+    end
+    object Btn4Cmd: TAction
+      Category = 'NumPad'
+      Caption = '4'
+    end
+    object Btn5Cmd: TAction
+      Category = 'NumPad'
+      Caption = '5'
+    end
+    object Btn6Cmd: TAction
+      Category = 'NumPad'
+      Caption = '6'
+    end
+    object Btn7Cmd: TAction
+      Category = 'NumPad'
+      Caption = '7'
+    end
+    object Btn8Cmd: TAction
+      Category = 'NumPad'
+      Caption = '8'
+    end
+    object Btn9Cmd: TAction
+      Category = 'NumPad'
+      Caption = '9'
+    end
+    object Btn0Cmd: TAction
+      Category = 'NumPad'
+      Caption = '0'
+    end
+    object BtnDecimalCmd: TAction
+      Category = 'NumPad'
+      Caption = ','
+    end
+    object SumCmd: TAction
+      Category = 'NumPad'
+      Caption = '+'
+    end
+    object SubtractCmd: TAction
+      Category = 'NumPad'
+      Caption = '-'
+    end
+    object MultiplyCmd: TAction
+      Category = 'NumPad'
+      Caption = '*'
+    end
+    object DivideCmd: TAction
+      Category = 'NumPad'
+      Caption = '/'
+    end
+    object EqualsCmd: TAction
+      Category = 'NumPad'
+      Caption = '='
+    end
+    object MemoryRecallCmd: TAction
+      Category = 'MemoryFunctions'
+      Caption = 'MR'
+    end
+    object MemoryStoreCmd: TAction
+      Category = 'MemoryFunctions'
+      Caption = 'MS'
+    end
+    object MemoryAddCmd: TAction
+      Category = 'MemoryFunctions'
+      Caption = 'M+'
+    end
+    object BkspCmd: TAction
+      Category = 'ClearFunctions'
+      Caption = 'BkSp'
+    end
+    object ClearEntryCmd: TAction
+      Category = 'ClearFunctions'
+      Caption = 'CE'
+    end
+    object ClearCmd: TAction
+      Category = 'ClearFunctions'
+      Caption = 'C'
+    end
+    object ChangeSignCmd: TAction
+      Category = 'StandardFunctions'
+      Caption = '+/-'
+    end
+    object SqrtCmd: TAction
+      Category = 'StandardFunctions'
+      Caption = 'Sqrt'
+    end
+    object PercentageCmd: TAction
+      Category = 'StandardFunctions'
+      Caption = '%'
+    end
+    object ReciprocalCmd: TAction
+      Category = 'StandardFunctions'
+      Caption = '1/x'
     end
   end
   object MainMenu: TMainMenu

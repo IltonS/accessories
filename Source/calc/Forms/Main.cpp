@@ -62,6 +62,7 @@ void __fastcall TFrmMain::ShowWhatsThis(TObject *Sender)
 void __fastcall TFrmMain::MemoryClear(TObject *Sender)
 {
 	//Do memory Clear
+    ShowMessage("Memory Clear");
 }
 //---------------------------------------------------------------------------
 
