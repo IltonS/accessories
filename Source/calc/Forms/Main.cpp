@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Main.h"
+#include "Calculator.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -15,18 +16,6 @@ __fastcall TFrmMain::TFrmMain(TComponent* Owner)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TFrmMain::EditCopy(TObject *Sender)
-{
-    //Do Copy
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TFrmMain::EditPaste(TObject *Sender)
-{
-    //Do Paste
-}
-//---------------------------------------------------------------------------
-
 void __fastcall TFrmMain::FormShow(TObject *Sender)
 {
 	FrmMain->Height = 280;
@@ -34,11 +23,13 @@ void __fastcall TFrmMain::FormShow(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-
 void __fastcall TFrmMain::ApplicationEventsIdle(TObject *Sender, bool &Done)
 {
 	//NumLock status
-    StatusBar->Panels->Items[2]->Text = ((GetKeyState(VK_NUMLOCK) & 0x0001)!=0) ? "NUM" : "";
+	StatusBar->Panels->Items[2]->Text = ((GetKeyState(VK_NUMLOCK) & 0x0001)!=0) ? "NUM" : "";
+
+	//Read Calculator Entry
+	PnlEntry->Caption = ACalculator->Entry;
 }
 //---------------------------------------------------------------------------
 
@@ -57,12 +48,6 @@ void __fastcall TFrmMain::ShowWhatsThis(TObject *Sender)
 	}
 	BalloonHint->ShowHint(WhatsThisPopupMenu->PopupPoint);
 
-}
-//---------------------------------------------------------------------------
-void __fastcall TFrmMain::MemoryClear(TObject *Sender)
-{
-	//Do memory Clear
-    ShowMessage("Memory Clear");
 }
 //---------------------------------------------------------------------------
 

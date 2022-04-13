@@ -24,7 +24,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 50
     Height = 25
-    Action = BkspCmd
+    Action = ACalculator.BkspCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -36,7 +36,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 106
     Height = 25
-    Action = ClearEntryCmd
+    Action = ACalculator.ClearEntryCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -48,7 +48,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 106
     Height = 25
-    Action = ClearCmd
+    Action = ACalculator.ClearCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -60,7 +60,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = Btn7Cmd
+    Action = ACalculator.Btn7Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -78,7 +78,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = Btn8Cmd
+    Action = ACalculator.Btn8Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -96,7 +96,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = DivideCmd
+    Action = ACalculator.DivideCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -108,7 +108,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = Btn9Cmd
+    Action = ACalculator.Btn9Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -126,7 +126,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = Btn4Cmd
+    Action = ACalculator.Btn4Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -144,7 +144,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = Btn5Cmd
+    Action = ACalculator.Btn5Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -162,7 +162,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = MultiplyCmd
+    Action = ACalculator.MultiplyCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -174,7 +174,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = Btn6Cmd
+    Action = ACalculator.Btn6Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -192,7 +192,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = Btn1Cmd
+    Action = ACalculator.Btn1Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -210,7 +210,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = Btn2Cmd
+    Action = ACalculator.Btn2Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -228,7 +228,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = SubtractCmd
+    Action = ACalculator.EqualsCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -240,7 +240,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = Btn3Cmd
+    Action = ACalculator.Btn3Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -258,7 +258,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = Btn0Cmd
+    Action = ACalculator.Btn0Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -276,7 +276,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = BtnDecimalCmd
+    Action = ACalculator.BtnDecimalCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -294,7 +294,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = SumCmd
+    Action = ACalculator.SumCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -306,7 +306,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = EqualsCmd
+    Action = ACalculator.EqualsCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -353,7 +353,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = MemoryClearCmd
+    Action = ACalculator.MemoryClearCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -371,7 +371,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = MemoryRecallCmd
+    Action = ACalculator.MemoryRecallCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -389,7 +389,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = MemoryStoreCmd
+    Action = ACalculator.MemoryStoreCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -407,7 +407,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = MemoryAddCmd
+    Action = ACalculator.MemoryAddCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -425,7 +425,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = SqrtCmd
+    Action = ACalculator.SqrtCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -437,7 +437,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ReciprocalCmd
+    Action = ACalculator.ReciprocalCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -449,7 +449,7 @@ object FrmMain: TFrmMain
     Top = 109
     Width = 50
     Height = 25
-    Action = PercentageCmd
+    Action = ACalculator.PercentageCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -461,7 +461,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = ChangeSignCmd
+    Action = ACalculator.ChangeSignCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -492,151 +492,11 @@ object FrmMain: TFrmMain
       end>
     OnMouseDown = MouseDown
   end
-  object ActionList: TActionList
-    Left = 392
-    Top = 96
-    object EditCopyCmd: TAction
-      Category = 'Edit'
-      Caption = '&Copy'
-      ShortCut = 16451
-      OnExecute = EditCopy
-    end
-    object EditPasteCmd: TAction
-      Category = 'Edit'
-      Caption = '&Paste'
-      ShortCut = 16470
-      OnExecute = EditPaste
-    end
-    object WhatsThisCmd: TAction
-      Category = 'Whats'
-      Caption = 'What'#39's This?'
-      OnExecute = ShowWhatsThis
-    end
-    object MemoryClearCmd: TAction
-      Category = 'MemoryFunctions'
-      Caption = 'MC'
-      Hint = 
-        'Clears any number stored in memory.|Keyboard equivalent = Ctrl +' +
-        ' L'
-      ShortCut = 16460
-      OnExecute = MemoryClear
-    end
-    object Btn1Cmd: TAction
-      Category = 'NumPad'
-      Caption = '1'
-    end
-    object Btn2Cmd: TAction
-      Category = 'NumPad'
-      Caption = '2'
-    end
-    object Btn3Cmd: TAction
-      Category = 'NumPad'
-      Caption = '3'
-    end
-    object Btn4Cmd: TAction
-      Category = 'NumPad'
-      Caption = '4'
-    end
-    object Btn5Cmd: TAction
-      Category = 'NumPad'
-      Caption = '5'
-    end
-    object Btn6Cmd: TAction
-      Category = 'NumPad'
-      Caption = '6'
-    end
-    object Btn7Cmd: TAction
-      Category = 'NumPad'
-      Caption = '7'
-    end
-    object Btn8Cmd: TAction
-      Category = 'NumPad'
-      Caption = '8'
-    end
-    object Btn9Cmd: TAction
-      Category = 'NumPad'
-      Caption = '9'
-    end
-    object Btn0Cmd: TAction
-      Category = 'NumPad'
-      Caption = '0'
-    end
-    object BtnDecimalCmd: TAction
-      Category = 'NumPad'
-      Caption = ','
-    end
-    object SumCmd: TAction
-      Category = 'NumPad'
-      Caption = '+'
-    end
-    object SubtractCmd: TAction
-      Category = 'NumPad'
-      Caption = '-'
-    end
-    object MultiplyCmd: TAction
-      Category = 'NumPad'
-      Caption = '*'
-    end
-    object DivideCmd: TAction
-      Category = 'NumPad'
-      Caption = '/'
-    end
-    object EqualsCmd: TAction
-      Category = 'NumPad'
-      Caption = '='
-    end
-    object MemoryRecallCmd: TAction
-      Category = 'MemoryFunctions'
-      Caption = 'MR'
-    end
-    object MemoryStoreCmd: TAction
-      Category = 'MemoryFunctions'
-      Caption = 'MS'
-    end
-    object MemoryAddCmd: TAction
-      Category = 'MemoryFunctions'
-      Caption = 'M+'
-    end
-    object BkspCmd: TAction
-      Category = 'ClearFunctions'
-      Caption = 'BkSp'
-    end
-    object ClearEntryCmd: TAction
-      Category = 'ClearFunctions'
-      Caption = 'CE'
-    end
-    object ClearCmd: TAction
-      Category = 'ClearFunctions'
-      Caption = 'C'
-    end
-    object ChangeSignCmd: TAction
-      Category = 'StandardFunctions'
-      Caption = '+/-'
-    end
-    object SqrtCmd: TAction
-      Category = 'StandardFunctions'
-      Caption = 'Sqrt'
-    end
-    object PercentageCmd: TAction
-      Category = 'StandardFunctions'
-      Caption = '%'
-    end
-    object ReciprocalCmd: TAction
-      Category = 'StandardFunctions'
-      Caption = '1/x'
-    end
-  end
   object MainMenu: TMainMenu
     Left = 496
     Top = 96
-    object EditMenu: TMenuItem
-      Caption = '&Edit'
-      object Copy1: TMenuItem
-        Action = EditCopyCmd
-      end
-      object Paste1: TMenuItem
-        Action = EditPasteCmd
-      end
+    object Menu1: TMenuItem
+      Caption = 'Menu'
     end
   end
   object ApplicationEvents: TApplicationEvents
@@ -654,5 +514,14 @@ object FrmMain: TFrmMain
   object BalloonHint: TBalloonHint
     Left = 392
     Top = 152
+  end
+  object MenuActionList: TActionList
+    Left = 392
+    Top = 96
+    object WhatsThisCmd: TAction
+      Category = 'Popup'
+      Caption = 'What'#39's This?'
+      OnExecute = ShowWhatsThis
+    end
   end
 end

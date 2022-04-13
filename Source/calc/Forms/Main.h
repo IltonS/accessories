@@ -4,27 +4,21 @@
 #define MainH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
+#include <System.AnsiStrings.hpp>
+#include <System.Actions.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
-#include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
 #include <Vcl.Menus.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.AppEvnts.hpp>
-#include <System.AnsiStrings.hpp>
 //---------------------------------------------------------------------------
 class TFrmMain : public TForm
 {
 __published:	// IDE-managed Components
-	TActionList *ActionList;
-	TAction *EditCopyCmd;
-	TAction *EditPasteCmd;
 	TMainMenu *MainMenu;
-	TMenuItem *EditMenu;
-	TMenuItem *Copy1;
-	TMenuItem *Paste1;
 	TButton *BtnBksp;
 	TButton *BtnClearEntry;
 	TButton *BtnClear;
@@ -57,42 +51,14 @@ __published:	// IDE-managed Components
 	TStatusBar *StatusBar;
 	TApplicationEvents *ApplicationEvents;
 	TPopupMenu *WhatsThisPopupMenu;
-	TAction *WhatsThisCmd;
 	TMenuItem *WhatsThis1;
 	TBalloonHint *BalloonHint;
-	TAction *MemoryClearCmd;
-	TAction *Btn1Cmd;
-	TAction *Btn2Cmd;
-	TAction *Btn3Cmd;
-	TAction *Btn4Cmd;
-	TAction *Btn5Cmd;
-	TAction *Btn6Cmd;
-	TAction *Btn7Cmd;
-	TAction *Btn8Cmd;
-	TAction *Btn9Cmd;
-	TAction *Btn0Cmd;
-	TAction *SumCmd;
-	TAction *SubtractCmd;
-	TAction *MultiplyCmd;
-	TAction *DivideCmd;
-	TAction *BtnDecimalCmd;
-	TAction *EqualsCmd;
-	TAction *MemoryRecallCmd;
-	TAction *MemoryStoreCmd;
-	TAction *MemoryAddCmd;
-	TAction *BkspCmd;
-	TAction *ClearEntryCmd;
-	TAction *ClearCmd;
-	TAction *ChangeSignCmd;
-	TAction *SqrtCmd;
-	TAction *PercentageCmd;
-	TAction *ReciprocalCmd;
-	void __fastcall EditCopy(TObject *Sender);
-	void __fastcall EditPaste(TObject *Sender);
+	TMenuItem *Menu1;
+	TActionList *MenuActionList;
+	TAction *WhatsThisCmd;
 	void __fastcall FormShow(TObject *Sender);
 	void __fastcall ApplicationEventsIdle(TObject *Sender, bool &Done);
 	void __fastcall ShowWhatsThis(TObject *Sender);
-	void __fastcall MemoryClear(TObject *Sender);
 	void __fastcall MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
 		  int X, int Y);
 private:	// User declarations
