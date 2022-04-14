@@ -4,7 +4,7 @@
 #pragma hdrstop
 
 #include "Main.h"
-#include "Calculator.h"
+#include "CalcEngine.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -29,7 +29,7 @@ void __fastcall TFrmMain::ApplicationEventsIdle(TObject *Sender, bool &Done)
 	StatusBar->Panels->Items[2]->Text = ((GetKeyState(VK_NUMLOCK) & 0x0001)!=0) ? "NUM" : "";
 
 	//Read Calculator Entry
-	PnlEntry->Caption = ACalculator->Entry;
+	PnlEntry->Caption = CEngine->Display;
 }
 //---------------------------------------------------------------------------
 

@@ -47,7 +47,7 @@ __published:	// IDE-managed Components
 	TButton *BtnSqrt;
 	TButton *BtnReciprocal;
 	TButton *BtnPercentage;
-	TButton *BtnChangeSign;
+	TButton *BtnToggleSign;
 	TStatusBar *StatusBar;
 	TApplicationEvents *ApplicationEvents;
 	TPopupMenu *WhatsThisPopupMenu;

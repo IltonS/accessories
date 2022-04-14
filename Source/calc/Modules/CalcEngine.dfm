@@ -1,8 +1,8 @@
-object ACalculator: TACalculator
+object CEngine: TCEngine
   OldCreateOrder = False
   Height = 150
   Width = 215
-  object CalcActions: TActionList
+  object CalcManager: TActionList
     Left = 23
     Top = 16
     object MemoryClearCmd: TAction
@@ -16,52 +16,52 @@ object ACalculator: TACalculator
     object Btn1Cmd: TAction
       Category = 'NumPad'
       Caption = '1'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn2Cmd: TAction
       Category = 'NumPad'
       Caption = '2'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn3Cmd: TAction
       Category = 'NumPad'
       Caption = '3'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn4Cmd: TAction
       Category = 'NumPad'
       Caption = '4'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn5Cmd: TAction
       Category = 'NumPad'
       Caption = '5'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn6Cmd: TAction
       Category = 'NumPad'
       Caption = '6'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn7Cmd: TAction
       Category = 'NumPad'
       Caption = '7'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn8Cmd: TAction
       Category = 'NumPad'
       Caption = '8'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn9Cmd: TAction
       Category = 'NumPad'
       Caption = '9'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object Btn0Cmd: TAction
       Category = 'NumPad'
       Caption = '0'
-      OnExecute = TypeANumber
+      OnExecute = OnNumberPressed
     end
     object BtnDecimalCmd: TAction
       Category = 'NumPad'
@@ -111,7 +111,7 @@ object ACalculator: TACalculator
       Category = 'ClearFunctions'
       Caption = 'C'
     end
-    object ChangeSignCmd: TAction
+    object ToggleSignCmd: TAction
       Category = 'StandardFunctions'
       Caption = '+/-'
     end

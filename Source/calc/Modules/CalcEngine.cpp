@@ -3,31 +3,31 @@
 
 #pragma hdrstop
 
-#include "Calculator.h"
+#include "CalcEngine.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma classgroup "Vcl.Controls.TControl"
 #pragma resource "*.dfm"
-TACalculator *ACalculator;
+TCEngine *CEngine;
 //---------------------------------------------------------------------------
-__fastcall TACalculator::TACalculator(TComponent* Owner)
+__fastcall TCEngine::TCEngine(TComponent* Owner)
 	: TDataModule(Owner)
 {
-	Entry = "0.";
-	EntryIsClean = true;
+	Display = "0.";
+	IsDisplayClean = true;
 }
 //---------------------------------------------------------------------------
-void __fastcall TACalculator::TypeANumber(TObject *Sender)
+void __fastcall TCEngine::OnNumberPressed(TObject *Sender)
 {
 	TControl *Control = static_cast<TControl *>(Sender);
-	String Number = MidStr(Control->Name, 4, 1);
+	String number = MidStr(Control->Name, 4, 1);
 
-	if (EntryIsClean) {
-		Entry = Number;
-		EntryIsClean = false;
+	if (IsDisplayClean) {
+		Display = number;
+		IsDisplayClean = false;
 	}
 	else {
-		Entry += Number;
+		Display += number;
 	}
 }
 //---------------------------------------------------------------------------

@@ -24,7 +24,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 50
     Height = 25
-    Action = ACalculator.BkspCmd
+    Action = CEngine.BkspCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -36,7 +36,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 106
     Height = 25
-    Action = ACalculator.ClearEntryCmd
+    Action = CEngine.ClearEntryCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -48,7 +48,7 @@ object FrmMain: TFrmMain
     Top = 47
     Width = 106
     Height = 25
-    Action = ACalculator.ClearCmd
+    Action = CEngine.ClearCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -60,7 +60,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = ACalculator.Btn7Cmd
+    Action = CEngine.Btn7Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -78,7 +78,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = ACalculator.Btn8Cmd
+    Action = CEngine.Btn8Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -96,7 +96,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = ACalculator.DivideCmd
+    Action = CEngine.DivideCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -108,7 +108,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = ACalculator.Btn9Cmd
+    Action = CEngine.Btn9Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -126,7 +126,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = ACalculator.Btn4Cmd
+    Action = CEngine.Btn4Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -144,7 +144,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = ACalculator.Btn5Cmd
+    Action = CEngine.Btn5Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -162,7 +162,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = ACalculator.MultiplyCmd
+    Action = CEngine.MultiplyCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -174,7 +174,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = ACalculator.Btn6Cmd
+    Action = CEngine.Btn6Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -192,7 +192,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ACalculator.Btn1Cmd
+    Action = CEngine.Btn1Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -210,7 +210,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ACalculator.Btn2Cmd
+    Action = CEngine.Btn2Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -228,7 +228,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ACalculator.EqualsCmd
+    Action = CEngine.EqualsCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -240,7 +240,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ACalculator.Btn3Cmd
+    Action = CEngine.Btn3Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -258,7 +258,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = ACalculator.Btn0Cmd
+    Action = CEngine.Btn0Cmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -276,7 +276,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = ACalculator.BtnDecimalCmd
+    Action = CEngine.BtnDecimalCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -294,7 +294,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = ACalculator.SumCmd
+    Action = CEngine.SumCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -306,7 +306,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = ACalculator.EqualsCmd
+    Action = CEngine.EqualsCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -353,7 +353,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = ACalculator.MemoryClearCmd
+    Action = CEngine.MemoryClearCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -371,7 +371,7 @@ object FrmMain: TFrmMain
     Top = 111
     Width = 50
     Height = 25
-    Action = ACalculator.MemoryRecallCmd
+    Action = CEngine.MemoryRecallCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -389,7 +389,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ACalculator.MemoryStoreCmd
+    Action = CEngine.MemoryStoreCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -407,7 +407,7 @@ object FrmMain: TFrmMain
     Top = 173
     Width = 50
     Height = 25
-    Action = ACalculator.MemoryAddCmd
+    Action = CEngine.MemoryAddCmd
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -425,7 +425,7 @@ object FrmMain: TFrmMain
     Top = 78
     Width = 50
     Height = 25
-    Action = ACalculator.SqrtCmd
+    Action = CEngine.SqrtCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -437,7 +437,7 @@ object FrmMain: TFrmMain
     Top = 142
     Width = 50
     Height = 25
-    Action = ACalculator.ReciprocalCmd
+    Action = CEngine.ReciprocalCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
@@ -449,19 +449,19 @@ object FrmMain: TFrmMain
     Top = 109
     Width = 50
     Height = 25
-    Action = ACalculator.PercentageCmd
+    Action = CEngine.PercentageCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False
     TabOrder = 27
     OnMouseDown = MouseDown
   end
-  object BtnChangeSign: TButton
+  object BtnToggleSign: TButton
     Left = 136
     Top = 173
     Width = 50
     Height = 25
-    Action = ACalculator.ChangeSignCmd
+    Action = CEngine.ToggleSignCmd
     ParentShowHint = False
     PopupMenu = WhatsThisPopupMenu
     ShowHint = False

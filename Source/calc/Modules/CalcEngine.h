@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef CalculatorH
-#define CalculatorH
+#ifndef CalcEngineH
+#define CalcEngineH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <System.Actions.hpp>
@@ -9,10 +9,10 @@
 #include <Vcl.ActnList.hpp>
 #include <Vcl.Dialogs.hpp>
 //---------------------------------------------------------------------------
-class TACalculator : public TDataModule
+class TCEngine : public TDataModule
 {
 __published:	// IDE-managed Components
-	TActionList *CalcActions;
+	TActionList *CalcManager;
 	TAction *MemoryClearCmd;
 	TAction *Btn1Cmd;
 	TAction *Btn2Cmd;
@@ -36,18 +36,18 @@ __published:	// IDE-managed Components
 	TAction *BkspCmd;
 	TAction *ClearEntryCmd;
 	TAction *ClearCmd;
-	TAction *ChangeSignCmd;
+	TAction *ToggleSignCmd;
 	TAction *SqrtCmd;
 	TAction *PercentageCmd;
 	TAction *ReciprocalCmd;
-	void __fastcall TypeANumber(TObject *Sender);
+	void __fastcall OnNumberPressed(TObject *Sender);
 private:	// User declarations
-	bool EntryIsClean;
+	bool IsDisplayClean;
 public:		// User declarations
-	String Entry;
-	__fastcall TACalculator(TComponent* Owner);
+	String Display;
+	__fastcall TCEngine(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TACalculator *ACalculator;
+extern PACKAGE TCEngine *CEngine;
 //---------------------------------------------------------------------------
 #endif
