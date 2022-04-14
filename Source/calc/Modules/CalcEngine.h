@@ -42,7 +42,10 @@ __published:	// IDE-managed Components
 	TAction *ReciprocalCmd;
 	void __fastcall OnNumberPressed(TObject *Sender);
 private:	// User declarations
+	String SYSTEM_DECIMAL;
+
 	bool IsDisplayClean;
+    bool HasDecimal;
 public:		// User declarations
 	String Display;
 	__fastcall TCEngine(TComponent* Owner);
