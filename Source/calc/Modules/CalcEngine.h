@@ -41,6 +41,8 @@ __published:	// IDE-managed Components
 	TAction *PercentageCmd;
 	TAction *ReciprocalCmd;
 	void __fastcall OnNumberPressed(TObject *Sender);
+	void __fastcall OnDecimalPressed(TObject *Sender);
+	void __fastcall OnBkspPressed(TObject *Sender);
 private:	// User declarations
 	String SYSTEM_DECIMAL;
 

@@ -1,6 +1,5 @@
 //---------------------------------------------------------------------------
 
-
 #pragma hdrstop
 
 #include "CalcEngine.h"
@@ -31,9 +30,8 @@ void __fastcall TCEngine::OnNumberPressed(TObject *Sender)
 	String number = MidStr(Control->Name, 4, 1);
 
 	if (HasDecimal) {
-		//Do something
+		Display += number;
 	} else {
-		int input;
 		if (IsDisplayClean) {
 			Display = number + SYSTEM_DECIMAL;
 			IsDisplayClean = (number == "0");
@@ -44,3 +42,32 @@ void __fastcall TCEngine::OnNumberPressed(TObject *Sender)
 	}
 }
 //---------------------------------------------------------------------------
+void __fastcall TCEngine::OnDecimalPressed(TObject *Sender)
+{
+	HasDecimal = true;
+	IsDisplayClean = false;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TCEngine::OnBkspPressed(TObject *Sender)
+{
+	if (!IsDisplayClean) {
+		if (HasDecimal) {
+			Display = MidStr(Display, 1, Display.Length()-1);
+			if (Pos(SYSTEM_DECIMAL, Display) == 0 ) {
+				HasDecimal = false;
+				Display += SYSTEM_DECIMAL;
+			}
+		}else{
+			if (Display.Length()>2) {
+				Display = MidStr(Display, 1, Display.Length()-2);
+				Display += SYSTEM_DECIMAL;
+			}else{
+				Display = "0" + SYSTEM_DECIMAL;
+			}
+		}
+	}
+	IsDisplayClean = ( (Display == ("0" + SYSTEM_DECIMAL)) && !HasDecimal );
+}
+//---------------------------------------------------------------------------
+

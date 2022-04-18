@@ -66,6 +66,7 @@ object CEngine: TCEngine
     object BtnDecimalCmd: TAction
       Category = 'NumPad'
       Caption = ','
+      OnExecute = OnDecimalPressed
     end
     object SumCmd: TAction
       Category = 'NumPad'
@@ -102,6 +103,7 @@ object CEngine: TCEngine
     object BkspCmd: TAction
       Category = 'ClearFunctions'
       Caption = 'BkSp'
+      OnExecute = OnBkspPressed
     end
     object ClearEntryCmd: TAction
       Category = 'ClearFunctions'
