@@ -12,16 +12,15 @@ TCEngine *CEngine;
 __fastcall TCEngine::TCEngine(TComponent* Owner)
 	: TDataModule(Owner)
 {
-	//Read local decimal
+	DecimalSeparator = ReadLocalDecimalSeparator();
+	OnClearPressed(this);
+}
+//---------------------------------------------------------------------------
+String TCEngine::ReadLocalDecimalSeparator()
+{
 	PChar localDecimal = StrAlloc(10);
 	GetLocaleInfo(LOCALE_SYSTEM_DEFAULT, LOCALE_SDECIMAL, localDecimal, 10);
-	SYSTEM_DECIMAL = String(localDecimal);
-
-
-	Display = "0" + SYSTEM_DECIMAL;
-	IsDisplayClean = true;
-
-	HasDecimal = false;
+	return String(localDecimal);
 }
 //---------------------------------------------------------------------------
 void __fastcall TCEngine::OnNumberPressed(TObject *Sender)
@@ -29,22 +28,22 @@ void __fastcall TCEngine::OnNumberPressed(TObject *Sender)
 	TControl *Control = static_cast<TControl *>(Sender);
 	String number = MidStr(Control->Name, 4, 1);
 
-	if (HasDecimal) {
+	if (IsDecimal) {
 		Display += number;
 	} else {
 		if (IsDisplayClean) {
-			Display = number + SYSTEM_DECIMAL;
+			Display = number + DecimalSeparator;
 			IsDisplayClean = (number == "0");
 		} else {
 			Display = MidStr(Display, 1, Display.Length()-1); //removes final decimal separator
-			Display += number + SYSTEM_DECIMAL;
+			Display += number + DecimalSeparator;
 		}
 	}
 }
 //---------------------------------------------------------------------------
 void __fastcall TCEngine::OnDecimalPressed(TObject *Sender)
 {
-	HasDecimal = true;
+	IsDecimal = true;
 	IsDisplayClean = false;
 }
 //---------------------------------------------------------------------------
@@ -52,22 +51,36 @@ void __fastcall TCEngine::OnDecimalPressed(TObject *Sender)
 void __fastcall TCEngine::OnBkspPressed(TObject *Sender)
 {
 	if (!IsDisplayClean) {
-		if (HasDecimal) {
+		if (IsDecimal) {
 			Display = MidStr(Display, 1, Display.Length()-1);
-			if (Pos(SYSTEM_DECIMAL, Display) == 0 ) {
-				HasDecimal = false;
-				Display += SYSTEM_DECIMAL;
+			if (Pos(DecimalSeparator, Display) == 0 ) {
+				IsDecimal = false;
+				Display += DecimalSeparator;
 			}
 		}else{
 			if (Display.Length()>2) {
 				Display = MidStr(Display, 1, Display.Length()-2);
-				Display += SYSTEM_DECIMAL;
+				Display += DecimalSeparator;
 			}else{
-				Display = "0" + SYSTEM_DECIMAL;
+				Display = "0" + DecimalSeparator;
 			}
 		}
 	}
-	IsDisplayClean = ( (Display == ("0" + SYSTEM_DECIMAL)) && !HasDecimal );
+	IsDisplayClean = ( (Display == ("0" + DecimalSeparator)) && !IsDecimal );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TCEngine::OnClearPressed(TObject *Sender)
+{
+	OnClearEntryPressed(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TCEngine::OnClearEntryPressed(TObject *Sender)
+{
+	Display = "0" + DecimalSeparator;
+	IsDisplayClean = true;
+	IsDecimal = false;
 }
 //---------------------------------------------------------------------------
 

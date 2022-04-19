@@ -43,11 +43,13 @@ __published:	// IDE-managed Components
 	void __fastcall OnNumberPressed(TObject *Sender);
 	void __fastcall OnDecimalPressed(TObject *Sender);
 	void __fastcall OnBkspPressed(TObject *Sender);
+	void __fastcall OnClearPressed(TObject *Sender);
+	void __fastcall OnClearEntryPressed(TObject *Sender);
 private:	// User declarations
-	String SYSTEM_DECIMAL;
-
+	String DecimalSeparator;
 	bool IsDisplayClean;
-    bool HasDecimal;
+	bool IsDecimal;
+	String ReadLocalDecimalSeparator();
 public:		// User declarations
 	String Display;
 	__fastcall TCEngine(TComponent* Owner);

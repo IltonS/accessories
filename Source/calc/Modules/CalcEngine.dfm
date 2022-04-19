@@ -108,10 +108,12 @@ object CEngine: TCEngine
     object ClearEntryCmd: TAction
       Category = 'ClearFunctions'
       Caption = 'CE'
+      OnExecute = OnClearEntryPressed
     end
     object ClearCmd: TAction
       Category = 'ClearFunctions'
       Caption = 'C'
+      OnExecute = OnClearPressed
     end
     object ToggleSignCmd: TAction
       Category = 'StandardFunctions'
